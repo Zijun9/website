@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Jackson (Zijun) Gao</title>
+        <title>Zijun Gao</title>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
         <meta property="og:url" content="https://zijun.me" />
-        <meta property="og:title" content="Jackson (Zijun) Gao" />
+        <meta property="og:title" content="Zijun Gao" />
         <meta property="og:description" content="Undergraduate student at UIUC studying Mathematics & Computer Science. Research in NLP, Computer Vision, and Machine Learning." />
         <meta property="og:image" content="https://zijun.me/img/profile.jpg" />
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="author" content="Jackson (Zijun) Gao">
-        <meta name="description" content="Jackson (Zijun) Gao - Undergraduate student at University of Illinois Urbana-Champaign studying Mathematics & Computer Science.">
+	    <meta name="author" content="Zijun Gao">
+        <meta name="description" content="Zijun Gao - Undergraduate student at University of Illinois Urbana-Champaign studying Mathematics & Computer Science.">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 
@@ -26,38 +26,86 @@
         <div class="container mt-5">
             <div class="row mb-3">
                 <div class="col-lg-3 col-md-4">
-                    <img class="img-fluid rounded" src="img/profile.jpg" alt="Jackson Gao">
-                    <p>
-                        <i class="fa fa-envelope pt-3"></i> zijung3@illinois.edu
+                    <img class="img-fluid rounded" src="img/profile.jpg" alt="Zijun Gao">
+                    <p class="text-center">
+                        zijung3@illinois.edu
                     </p>
                 </div>
                 <div class="col-lg-9 col-md-8">
-                    <h1>Jackson (Zijun) Gao</h1>
+                    <h1>Hi welcome! I am Zijun Gao</h1>
                     <p>
-                        I am an undergraduate student pursuing a Bachelor of Science in Mathematics and Computer Science at the
-                        <a href="https://illinois.edu/" target="_blank">University of Illinois Urbana-Champaign</a>,
-                        with an expected graduation in May 2026. My current GPA is 3.85/4.0.
+                        I am a senior majoring in Mathematics and Computer Science at the <a href="https://illinois.edu/" target="_blank">University of Illinois Urbana-Champaign</a>. My research interests are in large language models and reinforcement learning.
                     </p>
                     <p>
-                        I have research experience at the <a href="https://ucsd.edu/" target="_blank">University of California San Diego</a>,
-                        where I work on the SimWorld project—a world simulator for scaling photorealistic multi-agent interactions
-                        (accepted by CVPR 2025 Demo Track). I am advised by Professor <a href="https://lianhuiqin.github.io/" target="_blank">Lianhui Qin</a>
-                        and <a href="http://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a>, focusing on human motion generation through diffusion models.
-                    </p>
-                    <p>
-                        Previously, I received my Bachelor of Engineering in Computer Science and Technology from
-                        <a href="https://en.njtu.edu.cn/" target="_blank">Beijing Jiaotong University</a> (GPA: 89.3/100, Rank 5/132).
-                        I also worked as a Software Engineer Intern at Fengze Intelligent Equipment, developing intelligent systems for infrastructure monitoring.
-                    </p>
-                    <p>
-                        [<a href="files/CV.pdf" target="_blank">CV</a>] [<a href="https://github.com/gaozijun" target="_blank">GitHub</a>]
+                        [<a href="files/CV.pdf" target="_blank">CV</a>] [<a href="https://github.com/Zijun9" target="_blank">GitHub</a>]
                     </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
+                    <h2>Publications</h2>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li style="margin-bottom: 20px;">
+                            <a href="https://openreview.net/forum?id=pRSRiXdpkm&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2026%2FConference%2FAuthors%23your-submissions)" target="_blank">CORE: Concept-Oriented Reinforcement for Bridging the Definition–Application Gap in Mathematical Reasoning</a>
+                            <br/>
+                            <b>Zijun Gao</b>, Zhikun Xu, Xiao Ye, and Ben Zhou.
+                            <br/>
+                            In The International Conference on Learning Representations (ICLR 2026), under review.
+                            <br/>
+                            [<a href="#" onclick="$('#core-abstract').toggle(); return false;">abstract</a>]
+                            <div id="core-abstract" class="abstract" style="display: none;">
+                                <p>
+                                    Large language models (LLMs) often solve challenging math exercises yet fail to apply the concept right when the problem requires genuine understanding. Popular Reinforcement Learning with Verifiable Rewards (RLVR) pipelines reinforce final answers but provide little fine-grained conceptual signal, so models improve at pattern reuse rather than conceptual applications. We introduce CORE (Concept-Oriented REinforcement), an RL training framework that turns explicit concepts into a controllable supervision signal. Starting from a high-quality, low contamination textbook resource that links verifiable exercises to concise concept descriptions, we run a sanity probe showing LLMs can restate definitions but fail concept-linked quizzes, quantifying the conceptual reasoning gap. CORE then (i) synthesizes additional concept-aligned quizzes, (ii) injects concept snippets into rollouts, and (iii) reinforces the conceptual reasoning by replacing with correctly concept-applied trajectories or constraining drift with a lightweight divergence penalty; the procedure is compatible with standard policy-gradient methods. On two 7B models, CORE yields consistent gains over the vanilla baseline and SFT training across in-domain concept–exercise suites and diverse out-of-domain math benchmarks. CORE demonstrates that concept-injected, outcome regularized rollouts supply the missing fine-grained supervision needed to bridge question-solving competence and true conceptual reasoning without committing to a particular RL algorithm or certain process-based verifiers.
+                                </p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                            <a href="https://simworld.org/" target="_blank">SimWorld: A World Simulator for Scaling Photorealistic Multi-Agent Interactions</a>
+                            <br/>
+                            Yan Zhuang, Jiawei Ren, Xiaokang Ye, Xuhong He, <b>Zijun Gao</b>, Ryan Wu, Mrinaal Dogra, Cassie Zhang, Kai Kim, Bertt Wolfinger, Ziqiao Ma, Tianmin Shu, Zhiting Hu, and Lianhui Qin.
+                            <br/>
+                            In The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025), Demo Track.
+                            <br/>
+                            [<a href="https://simworld.org/" target="_blank">webpage</a>]
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>
+                            <b>University of Illinois Urbana-Champaign</b>
+                            <br/>
+                            B.S. in Mathematics and Computer Science
+                            <br/>
+                            2024.1 - 2025.12
+                        </li>
+                        <br/>
+                        <li>
+                            <b>Beijing Jiaotong University</b>
+                            <br/>
+                            B.Eng. in Computer Science and Technology
+                            <br/>
+                            2021.8 - 2023.12 (Transferred)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Recent News section hidden
+            <hr>
+            <div class="row">
+                <div class="col">
                     <h2>Recent News</h2>
                     <ul>
+                        <li>
+                            <b>[December 2025]</b> Submitted CORE paper on mathematical reasoning to ICLR 2026.
+                        </li>
+                        <li>
+                            <b>[May 2025]</b> Started research on multi-agent collaboration with Professor Manling Li at UIUC.
+                        </li>
                         <li>
                             <b>[March 2025]</b> Our SimWorld project has been accepted to the CVPR 2025 Demo Track!
                         </li>
@@ -67,86 +115,98 @@
                     </ul>
                 </div>
             </div>
+            -->
+            <!-- Research Highlights section hidden
             <hr>
             <div class="row" id="research">
                 <div class="col">
-                    <h2>Research Experience</h2>
+                    <h2>Research Highlights</h2>
                     <ul class="pl">
+                        <li>
+                            <b>MAGEN: Training AI Agents to Collaborate</b>
+                            <br/>
+                            University of Illinois Urbana-Champaign | May 2025 - Present
+                            <br/>
+                            Advisor: Professor <a href="https://manlingl.github.io/" target="_blank">Manling Li</a>
+                            <br/>
+                            <p>
+                                Designed MAGEN-Gym, an action-centric environment suite supporting both sequential and simultaneous
+                                multi-agent interactions across variable agent counts and modalities (LLM/VLM). Developed a reverse-playing
+                                mechanism with jitter step curriculum and L-path geometric constraints to synthesize ground-truth trajectories
+                                with progressive difficulty. Formulated the task as a Dec-POMDP with role-sharing policies, optimized via
+                                Multi-Agent PPO. Established a two-stage SFT-then-RL pipeline where agents generate structured thought traces
+                                to internalize a Multi-Agent World Model. Outperformed strong baselines in collaborative success rates across
+                                Dual Sokoban and Overcooked scenarios. Targeting submission to ICML 2026.
+                            </p>
+                        </li>
+                        <br/>
+                        <li>
+                            <b>CORE: Concept-Oriented Reinforcement for Mathematical Reasoning</b>
+                            <br/>
+                            Remote Research | February 2025 - December 2025
+                            <br/>
+                            Advisor: Professor <a href="https://ben-zhou.github.io/" target="_blank">Ben Zhou</a>
+                            <br/>
+                            <p>
+                                Identified the Definition–Application Gap in LLMs: models can describe mathematical concepts but fail to
+                                apply them in reasoning tasks. Developed CORE, a reinforcement learning framework grounded in rigorous
+                                mathematical definitions that transforms static textbooks into dynamic supervision signals via quiz-style
+                                probes. Introduced Concept Injection to automatically localize and reinforce persistently failing concepts.
+                                Achieved significant performance gains (up to +14.8%) across 10+ mathematical benchmarks on both base and
+                                instruction-tuned models. Verified through perturbation tests that CORE significantly improves robustness
+                                against irrelevant distractors. Submitted to ICLR 2026 (under review).
+                            </p>
+                        </li>
+                        <br/>
                         <li>
                             <b>SimWorld: A World Simulator for Scaling Photorealistic Multi-Agent Interactions</b>
                             <br/>
-                            University of California San Diego, Undergraduate Researcher
+                            University of California San Diego | July 2024 - January 2025
                             <br/>
-                            June 2024 - March 2025 (Accepted by CVPR 2025 Demo Track)
+                            Advisors: Professors <a href="http://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> and
+                            <a href="https://lianhuiqin.github.io/" target="_blank">Lianhui Qin</a>
                             <br/>
                             <p>
-                                Led team on human motion generation through diffusion models, advised by Professor Lianhui Qin and Zhiting Hu.
-                                Developed Python APIs that integrate LLM calls to dynamically control and customize city generation.
+                                Contributed to a photorealistic world simulator for studying multi-agent interactions in large, city-like
+                                environments. Helped develop a diffusion-based human motion module and implemented Python APIs that call
+                                LLMs to control and customize city generation. Created 3D assets and scenes in Blender. The system has
+                                been accepted as a demo at CVPR 2025 and is used as a platform for testing interactive agents.
                             </p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <hr>
-            <div class="row" id="projects">
-                <div class="col">
-                    <h2>Selected Projects</h2>
-                    <ul class="pl">
-                        <li>
-                            <b>Text-to-Image Scalable Diffusion Models with Transformers</b> (December 2024 - January 2025)
-                            <br/>
-                            <p>
-                                Leveraged a pre-trained DistilBERT encoder and integrated it with Diffusion Transformers (DiT) in PyTorch.
-                                Achieved a 73% reduction in memory consumption through gradient checkpointing and pre-extracted VAE image features,
-                                enhancing training speed to 0.32 iters/sec on a single A100 GPU. The fine-tuned model achieved a competitive FID score
-                                of 15.49 on MS-COCO with just 200K training steps.
-                            </p>
-                        </li>
-                        <br/>
-                        <li>
-                            <b>Reproduce of Alpaca 7B</b> (July 2024 - August 2024)
-                            <br/>
-                            <p>
-                                Developed a Self-Instruct-based pipeline to generate a 52K-sample dataset with GPT-3.5-Turbo from 200 manually crafted instructions.
-                                Implemented training and fine-tuning workflows leveraging Hugging Face's framework, utilizing Fully Sharded Data Parallel and mixed precision
-                                techniques to enhance efficiency and reduce GPU memory usage.
-                            </p>
-                        </li>
-                        <br/>
-                        <li>
-                            <b>Tai Chi Training Assistance WeChat Mini Program</b> (April 2022 - May 2023)
-                            <br/>
-                            <p>
-                                Led a three-person team for a year, earning a Beijing Municipal Innovation Project Award (Top 300 out of 1,448 teams).
-                                Created a Tai Chi training assistance app capable of recognizing users' Tai Chi movements and comparing them to standard motions.
-                                Designed algorithms for Tai Chi motion detection and comparison using the MoveNet model for human pose estimation.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            -->
+            <!-- Awards section hidden
             <hr>
             <div class="row">
                 <div class="col">
-                    <h2>Skills & Interests</h2>
+                    <h2>Awards</h2>
                     <ul>
                         <li>
-                            <b>Programming:</b> Proficient in Python, PyTorch, Linux and C. Capable of developing software projects using these languages and tools.
+                            <b>Dean's List</b>, University of Illinois Urbana-Champaign (2024)
                         </li>
                         <li>
-                            <b>Research Interests:</b> Natural Language Processing, Computer Vision, Reinforcement Learning, and Machine Learning.
+                            <b>National 3rd Prize</b>, National College Mathematics Competition, Beijing, China (2023)
                         </li>
                         <li>
-                            <b>Awards:</b> Beijing Jiaotong University First-Class Scholarship for Academic Excellence (Top 3%), Third Prize in the National College Mathematics Competition.
+                            <b>Provincial Award</b>, Entrepreneurship and Innovation Competition for College Students, Beijing, China (2023)
+                        </li>
+                        <li>
+                            <b>First-Class Scholarship for Academic Excellence (Top 3%)</b>, Beijing Jiaotong University (2022)
+                        </li>
+                        <li>
+                            <b>Outstanding Student</b>, Beijing Jiaotong University (2021-2023)
                         </li>
                     </ul>
                 </div>
             </div>
+            -->
             <footer class="pt-2 my-md-2 pt-md-2 border-top">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center align-self-center">
                         <p class="h5 text-muted">
-                            © Jackson (Zijun) Gao, 2025
+                            © Zijun Gao, 2025
                         </p>
                         <p class="text-muted">
                             Website template adapted from <a href="https://github.com/nelson-liu/website" target="_blank">Nelson Liu's website</a>.

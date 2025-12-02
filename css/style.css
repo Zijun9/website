@@ -11,6 +11,10 @@ body {
     font-family: Palatino, "EB Garamond", Georgia, "Times New Roman", serif
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 .row:not(#publications) a {
     text-decoration: underline;
 }
